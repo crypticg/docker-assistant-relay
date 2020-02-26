@@ -17,5 +17,5 @@ RUN unzip -d /assistant_relay release.zip
 EXPOSE ${PORT}
 
 WORKDIR /assistant-relay
-RUN npm i
-ENTRYPOINT ["npm", "run", "start"]
+#RUN npm i
+#ENTRYPOINT ["npm", "run", "start"]
