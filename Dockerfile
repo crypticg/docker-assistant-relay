@@ -12,10 +12,10 @@ RUN npm i pm2 -g
 
 RUN wget https://github.com/greghesp/assistant-relay/releases/download/v${ASSISTANT_RELAY_VERSION}/release.zip
 
-RUN unzip -d /assistant_relay release.zip
+RUN unzip -d /assistant-relay release.zip
 
 EXPOSE ${PORT}
 
 WORKDIR /assistant-relay
-#RUN npm i
-#ENTRYPOINT ["npm", "run", "start"]
+RUN npm i
+ENTRYPOINT ["npm", "run", "start"]
